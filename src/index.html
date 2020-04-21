@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>PROJETO - EDITOR</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(53, 25, 216),
+          #999
+        );
+        background-position: center;
+        background-origin: unset;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        width: 650px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        padding: 20px 0;
+        color: rgb(15, 1, 1);
+      }
+
+      .actions {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #save {
+        background-color: #fff;
+        padding: 10px 20px;
+        border: 1px solid #999;
+        font-size: 2em;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>PROJETO - EDITOR</h1>
+      <textarea name="editor" id="editor" cols="30" rows="10">
+        Editor de texto
+        </textarea
+      >
+    </div>
+
+    <div class="actions">
+      <button class="favorite styled" type="button">
+        Salvar
+      </button>
+    </div>
+
+    <script src="comandos.js"></script>
+
+    <script>
+      var editor = new CDEditor('#editor');
+    </script>
+  </body>
+</html>

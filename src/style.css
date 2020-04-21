@@ -1,0 +1,91 @@
+.cd-toolbar {
+  box-sizing: border-box;
+  min-height: 40px;
+  border: 1px solid #999;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px;
+  background-color: #ddd;
+}
+
+.cd-toolbar li {
+  margin: 0;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.cd-toolbar button {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #999;
+}
+
+.cd-toolbar select {
+  height: 20px;
+  min-width: 40px;
+  background-color: #fff;
+  border: 1px solid #999;
+}
+
+.cd-toolbar li.space {
+  content: '/';
+  width: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #999;
+}
+
+#color {
+  width: 80px;
+}
+#color option span {
+  width: 80px;
+  content: '&nbsp';
+  border: 1px solid #999;
+}
+
+.cd-editor {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 300px;
+  margin: 0;
+  padding: 10px;
+  border: 0;
+  display: block;
+  overflow: auto;
+  border: 1px solid #999;
+  border-top: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(0, 33, 220);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(67, 54, 253);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
